@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Formulario</title>
+	<link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> 
+	<link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+	<main>
+		<form action="" class="formulario" id="formulario">
+			<!-- Grupo: Usuario -->
+			<div class="formulario__grupo" id="grupo__usuario">
+				<laber for="usuario" class="formulario__label">Usuario</laber>
+				<div class="formulario__grupo-input">
+					<input type="text" class="formulario__input" name="usuario" id="usuario" placeholder="JuanChirolas1">
+					<i class="formulario__validacion-estado far fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">El usuario tiene que ser máximo 20 y mínimo 10 caracteres y solo puede contener números, letras y guión bajo</p>
+			</div>
+
+			<!-- Grupo: Nombres -->
+			<div class="formulario__grupo" id="grupo__nombre">
+				<laber for="nombre" class="formulario__label">Nombres</laber>
+				<div class="formulario__grupo-input">
+					<input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="Juan Camilo">
+					<i class="formulario__validacion-estado far fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">El nombre tiene que ser mínimo 5 y máximo 25 caracteres y pueden llevar Letras, espacios y llevar acentos.</p>
+			</div>
+
+			<!-- Grupo: Apellidos -->
+			<div class="formulario__grupo" id="grupo__apellido">
+				<laber for="apellido" class="formulario__label">Apellidos</laber>
+				<div class="formulario__grupo-input">
+					<input type="text" class="formulario__input" name="apellido" id="apellido" placeholder="Guerrero Ortega">
+					<i class="formulario__validacion-estado far fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">El nombre tiene que ser mínimo 5 y máximo 25 caracteres y pueden llevar Letras, espacios y llevar acentos.</p>
+			</div>
+            
+			<!-- Grupo: Pais-->
+			<div class="formulario__grupo" id="grupo__pais">
+				<laber for="pais" class="formulario__label">País</laber>
+				<div class="formulario__grupo-input">
+					<input type="text" class="formulario__input" name="pais" id="pais" placeholder="Colombia">
+					<i class="formulario__validacion-estado far fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">Minimo 3 caracteres, máximo de 12 caracteres</p>
+			</div>
+
+			<!-- Grupo: Password -->
+			<div class="formulario__grupo" id="grupo__password">
+				<laber for="password" class="formulario__label">Contraseña</laber>
+				<div class="formulario__grupo-input">
+					<input type="password" class="formulario__input" name="password" id="password">
+					<i class="formulario__validacion-estado far fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">Máximo 20 y mínimo 15 caracteres.</p>
+			</div>
+
+			<!-- Grupo: Password 2 -->
+			<div class="formulario__grupo" id="grupo__password2">
+				<laber for="password2" class="formulario__label">Confirmar Contraseña</laber>
+				<div class="formulario__grupo-input">
+					<input type="password" class="formulario__input" name="password2" id="password2">
+					<i class="formulario__validacion-estado far fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">Ambas contraseñas tienen que ser iguales.</p>
+			</div>
+
+			<!-- Grupo: Correo Electronico -->
+			<div class="formulario__grupo" id="grupo__correo">
+				<laber for="correo" class="formulario__label">Correo Electronico</laber>
+				<div class="formulario__grupo-input">
+					<input type="email" class="formulario__input" name="correo" id="correo" placeholder="correo@correo.com">
+					<i class="formulario__validacion-estado far fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">Máximo 120 caracteres y solo puede contener letras, números, puntos, guiones y guión bajo.</p>
+			</div>
+
+			<!-- Grupo: Telefono -->
+			<div class="formulario__grupo" id="grupo__telefono">
+				<laber for="telefono" class="formulario__label">Teléfono</laber>
+				<div class="formulario__grupo-input">
+					<input type="tel" class="formulario__input" name="telefono" id="telefono" placeholder="6666666">
+					<i class="formulario__validacion-estado far fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">Máximo 10 y mínimo 7 dígitos, solo puede tener numeros.</p>
+			</div>
+
+			<!-- Grupo: Dirección -->
+			<div class="formulario__grupo" id="grupo__direccion">
+				<laber for="direccion" class="formulario__label">Dirección</laber>
+				<div class="formulario__grupo-input">
+					<input type="text" class="formulario__input" name="direccion" id="direccion" placeholder="Cll 4 # 13-22">
+					<i class="formulario__validacion-estado far fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">Debe empezar por las siguientes palabras cll, cra, av, anv, trans y no puede llevar acentos ni simbolos pero si puede llevar guiones y guion bajo.</p>
+			</div>
+
+			<!-- Grupo: Radio Buttons-->
+			<div class="formulario__grupo" id="grupo__gustos">
+				<h3>Gustos</h3>
+			    <div>
+					<h4>Color favorito</h4>
+					<input type="radio" name="colorf" id="rojo">
+					<label for="rojo">Rojo</label>
+
+					<input type="radio" name="colorf" id="azul">
+					<label for="azul">Azul</label>
+
+					<input type="radio" name="colorf" id="blanco">
+					<label for="blanco">blanco</label>
+				</div>
+
+				<div>
+					<h4>Marca de carro favorita</h4>
+					<input type="radio" name="marcaf" id="bmw">
+					<label for="bmw">BMW</label>
+
+					<input type="radio" name="marcaf" id="audi">
+					<label for="audi">Mercedez Benz</label>
+
+					<input type="radio" name="marcaf" id="nissan">
+					<label for="nissan">Nissan</label>
+				</div>
+
+				<div>
+					<h4>Estilo de carro favorito</h4>
+					<input type="radio" name="estilof" id="deportivo">
+					<label for="deportivo">Deportivo</label>
+
+					<input type="radio" name="estilof" id="clasico">
+					<label for="clasico">Clasico</label>
+
+					<input type="radio" name="estilof" id="todoterreno">
+					<label for="todoterreno">Todoterreno</label>
+				</div>
+
+				<div>
+					<h4>Valor dispuesto a pagar (tenga en cuenta que los valores estan en millones)</h4>
+					150<input type="range" name="valorf" id="valorf" min="150" max="250" step="10">250
+				</div>
+			</div>
+
+			<!-- Terminos y Condiciones  -->
+			<div class="formulario__grupo" id="grupo__terminos">
+				<label class="formulario__label">
+					<input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos">
+					Acepto los Terminos y Condiciones
+				</label>
+			</div>
+
+			<div class="formulario__mensaje" id="formulario__mensaje">
+				<p><i class="fas fa-exclamation-triangle"></i><b>Error:</b> Por favor rellene todo el formulario </p>
+			</div>
+
+			<div class="formulario__grupo formulario__grupo-btn-enviar">
+				<button type="submit" class="formulario__btn">Enviar</button>
+				<p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente!</p>
+			</div>
+		</form>
+	</main>
+
+	<script src="js/formulario.js"></script>
+	<script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+</body>
+</html>
